@@ -13913,7 +13913,13 @@ Application: some of the SVM applications are  handwriting recognition, face/no-
 Strength: SVM is a maximal-margin classifier with powerful kernel methods and can find non-linear model and is robust in high dimension (i.e high number of features). 
 Weakness: choosing a good kernel might be difficult. could have overfitting when when number of features far exceeds number of samples; difficult to understand and explain the final model; could take long time for large data set
 Why I choose it: it's a high accurate model to begin with, and among all the features in the census data, there could have a few features that can define the income boundary (margin) more so than other features.</p>
-<p>[Gaussian Naive Bayes]
+<p>[AdaBoost]
+Application: one of the applications is face boundary detection
+Strength: it can improve the performance of weak learner throught weighted data and weighted model
+Weakness: when data has a lot of noise
+Why I choose it: AdaBoost can combine different (weak) learners into good prediction.</p>
+<p>Picked first but dropped eventually
+[Gaussian Naive Bayes] 
 Application:One of the real-world applications in industry for Gaussian Naive Bayes model is the spam detection.<br>
 Strength: It is a classification scheme that is built on Naive Bayes theorem (with underlying Gaussian distribution) with the assumption of indepedence among features (thus 'Naive'). It is fast and can handle a very large set of data. When the assumption of feature depedence holds, it perfoms surprisely well against other more complicated models
 Weakness: However, in real life, the assumption of being independent among features might not be true, and when that happens, the model's performance could suffer
